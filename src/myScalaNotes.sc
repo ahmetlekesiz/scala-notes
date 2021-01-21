@@ -13,3 +13,9 @@ def sum(xs : List[Int]): Int = {
 }
 
 print(sum(exampleList))
+
+// Shorter version of writing match expression
+
+def sumShorter(xs: List[Int]): Int = (0 :: xs) reduceLeft(_ + _)
+
+print(sumShorter(exampleList))
